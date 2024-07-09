@@ -1,4 +1,17 @@
-@import "../../styles/variables"; // Importation des variables SCSS
+// Importation des variables SCSS
+@import "../../styles/variables";
+
+// Définir les chemins des images dans les variables SCSS
+$logo-paths: (
+  mesure: "../../assets/lettre_M.png",
+  frontend: "../../assets/lettre_F.png",
+  backend: "../../assets/lettre_B.png",
+  support: "../../assets/lettre_S.png",
+  languages: "../../assets/lettre_L.png",
+  extras: "../../assets/lettre_E.png",
+  approach: "../../assets/lettre_A.png",
+  pricing: "../../assets/lettre_T.png"
+);
 
 $colors: (
   1: #baffc9, // Vert
@@ -33,9 +46,12 @@ $colors: (
       justify-content: center;
       padding-right: 20px;
 
-      .logo {
-        width: 140px;
-        height: auto;
+      @each $name, $path in $logo-paths {
+        .logo-#{$name} {
+          width: 140px;
+          height: auto;
+          content: url(#{$path});
+        }
       }
     }
 
@@ -179,7 +195,6 @@ $colors: (
           width: 100%;
           margin-left: 0;
           font-size: 14px;
-
         }
       }
     }

@@ -1,3 +1,10 @@
+// Définir les chemins des images dans les variables SCSS
+$logo-navbar-path: "../../assets/logo.png";
+$green-path: "../../assets/green.png";
+$yellow-path: "../../assets/yellow.png";
+$blue-path: "../../assets/blue.png";
+$pink-path: "../../assets/pink.png";
+
 header {
   background-color: black;
   width: 100%;
@@ -12,6 +19,12 @@ header {
     align-items: center;
     width: 100%;
     padding: 0 30px 0 66px;
+
+    a {
+      .logo-navbar {
+        content: url(#{$logo-navbar-path});
+      }
+    }
   }
 
   ul {
@@ -56,28 +69,28 @@ header {
       }
 
       .green {
-        background-image: url('../assets/green.png');
+        background-image: url(#{$green-path});
         left: 30%;
         bottom: -17px;
         transform: translateX(-50%);
       }
 
       .yellow {
-        background-image: url('../assets/yellow.png');
+        background-image: url(#{$yellow-path});
         left: 30%;
         bottom: -17px;
         transform: translateX(-50%);
       }
 
       .blue {
-        background-image: url('../assets/blue.png');
+        background-image: url(#{$blue-path});
         left: 25%;
         bottom: -17px;
         transform: translateX(-50%);
       }
 
       .pink {
-        background-image: url('../assets/pink.png');
+        background-image: url(#{$pink-path});
         left: 40%;
         bottom: -17px;
         transform: translateX(-50%);

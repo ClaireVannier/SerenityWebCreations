@@ -23,14 +23,13 @@
 
 .envelope {
   position: relative;
-  width: 30px; /* Ajuste la taille de l'enveloppe */
-  height: 30px;
-  padding-bottom: 5px;
+  width: 36px; /* Ajuste la taille de l'enveloppe */
+  height: 36px;
 }
 
-.envelope .open,
-.envelope .closed {
-  font-size: 30px; /* Ajuste la taille de l'icône ici */
+.envelope .closed,
+.envelope .open {
+  font-size: 36px; /* Ajuste la taille de l'icône ici */
   position: absolute;
   top: 0;
   left: 0;
@@ -58,31 +57,31 @@
   }
 
   .envelope {
-    width: 25px; /* Réduction de la taille de l'enveloppe */
+    width: 30px; /* Réduction de la taille de l'enveloppe */
     height: 30px;
   }
 
-  .envelope .open,
-  .envelope .closed {
-    font-size: 27px; /* Ajuste la taille de l'icône */
+  .envelope .closed,
+  .envelope .open {
+    font-size: 30px; /* Ajuste la taille de l'icône */
   }
 }
 
 // Responsive design pour les écrans de moins de 600px
 @media (max-width: 600px) {
   .contact-button {
-    font-size: 32px; /* Réduction supplémentaire de la taille de la police */
-    padding: 13px 20px; /* Ajustement du padding */
+    font-size: 28px; /* Réduction supplémentaire de la taille de la police */
+    padding: 10px 20px; /* Ajustement du padding */
     gap: 10px; /* Ajustement de l'espace entre le texte et l'enveloppe */
   }
 
   .envelope {
     width: 25px; /* Réduction de la taille de l'enveloppe */
-    height: 30px;
+    height: 25px;
   }
 
-  .envelope .open,
-  .envelope .closed {
-    font-size: 27px; /* Ajuste la taille de l'icône */
+  .envelope .closed,
+  .envelope .open {
+    font-size: 25px; /* Ajuste la taille de l'icône */
   }
 }
