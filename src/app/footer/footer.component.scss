@@ -1,0 +1,70 @@
+footer {
+    display: flex; // Affichage en flexbox
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    position: relative; // Position fixe pour le footer
+    bottom: 5px; // Espacement de 5px du bas de la page
+    width: 100%; // Prend toute la largeur de la fenêtre
+    padding: 10px 0; // Espacement intérieur vertical
+    z-index: 1000; // Assurez-vous que le footer est au-dessus d'autres éléments
+  
+    p {
+      margin: 0.8rem 0; // Marge pour les paragraphes
+      font-family: 'Arial', sans-serif; // Police de caractères
+      color: #cccccc; // Couleur du texte
+    }
+  
+    .social-links {
+      display: flex; // Affichage en flexbox
+      gap: 10px; // Espacement entre les éléments
+  
+      li {
+        list-style: none; // Suppression des puces de la liste
+  
+        a {
+          display: inline-block; // Affichage en ligne des liens
+  
+          .ai-github-fill, .ai-linkedin-box-fill {
+            width: 26px; // Largeur des icônes sociales
+            height: 23px; // Hauteur des icônes sociales
+            fill: #ffffff; // Couleur blanche pour les icônes
+          }
+        }
+      }
+    }
+  }
+  
+  // Responsive design
+  @media (max-width: 1000px) {
+    footer {
+      position: relative;
+      flex-direction: column-reverse;
+      text-align: center;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    footer {
+        position: relative;
+        
+        p {
+          font-size: 12px;
+          margin: 3px 0;
+      }
+      .social-links {
+        gap: 5px; // Espacement réduit entre les éléments
+  
+        li {
+          margin: 0 3px; // Marge autour des éléments réduite
+        }
+  
+        a {
+          .ai-github-fill, .ai-linkedin-box-fill {
+            width: 30px; // Réduction de la largeur des icônes sociales
+            height: 27px; // Réduction de la hauteur des icônes sociales
+          }
+        }
+      }
+    }
+  }
