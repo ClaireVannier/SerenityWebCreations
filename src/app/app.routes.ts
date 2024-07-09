@@ -1,6 +1,7 @@
 import { Routes } from '@angular/router';
 import { ServicesComponent } from './services/services.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
+import { ContactComponent } from './contact/contact.component';
 // import { ContactComponent } from './contact/contact.component';
 // import { LandingPageComponent } from './pages/landing-page/landing-page.component';
 // import { ServicesComponent } from './pages/services/services.component';
@@ -11,7 +12,7 @@ import { LandingPageComponent } from './landing-page/landing-page.component';
 export const routes: Routes = [
   { path: '', component: LandingPageComponent},
   { path: 'services', component: ServicesComponent },
+  { path: 'contact', component: ContactComponent },
 //   { path: 'portfolio', component: PortfolioComponent },
 //   { path: 'blog', component: BlogComponent },
-  // { path: 'contact', component: ContactComponent },
 ];

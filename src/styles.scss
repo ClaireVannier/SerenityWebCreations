@@ -1,5 +1,5 @@
-@import '../src/styles/variables';
-@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+@import "../src/styles/variables";
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
 
 * {
   margin: 0;
@@ -8,12 +8,15 @@
 }
 
 body {
-  background-color: black;
+  background-color: #333333;
   color: $color-text;
   font-family: $font-title;
 }
 
-ul,ol, li, a {
+ul,
+ol,
+li,
+a {
   text-decoration: none;
   list-style: none;
 }
